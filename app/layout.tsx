@@ -51,12 +51,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ravivarman's Portfolio | Software Engineer",
     description:
-      "Software Engineer, Startup Builder, and Designer.",
+      "Software Engineer, Startup Builder, and Designer building SaaS products, AI tools, and innovative web applications.",
     url: "https://aarvee.is-a.dev/",
     siteName: "Ravivarman Portfolio",
     images: [
       {
-        url: "/preview.png",
+        url: "https://aarvee.is-a.dev/preview.png",
         width: 1200,
         height: 630,
         alt: "Ravivarman's Portfolio",
