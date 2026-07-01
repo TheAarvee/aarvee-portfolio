@@ -16,7 +16,7 @@ import personImage from "../assets/person.png";
 export const revalidate = 300;
 
 const resumeDownloadUrl =
-  "https://drive.google.com/file/d/10_XkVPqNJ6MZHLHAgHoVuUS9dbW2UCrH/view?usp=sharing";
+  "https://drive.google.com/file/d/14752bZeplsfBWCvvSOJkF1LQv1pRMrtf/view?usp=sharing";
 
 function logoUrl(source?: Parameters<typeof urlForImage>[0]) {
   if (!source) {
