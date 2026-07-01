@@ -48,6 +48,10 @@ export const metadata: Metadata = {
   description:
     "Official portfolio of Ravivarman showcasing AI projects, SaaS products, software development skills, and startup journey.",
 
+  other: {
+    "og:site_name": "Ravivarman's Portfolio",
+  },
+
   openGraph: {
     title: "Ravivarman's Portfolio | Software Engineer",
     description:
@@ -79,12 +83,23 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ravivarman | Software Engineer",
+    "alternateName": "Ravivarman Portfolio",
+    "url": "https://aarvee.is-a.dev",
+  };
   return (
     <html
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, familjenGrotesk.variable, instrumentSerif.variable, dotGothic.variable, plankFont.variable, "font-mono", jetbrainsMono.variable)}
     >
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         <Footer />
       </body>
